@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		BF0A570E19D55A1000E4FF6E /* universal-build */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BF0A570F19D55A1100E4FF6E /* Build configuration list for PBXAggregateTarget "universal-build" */;
+			buildPhases = (
+				BF0A571219D55A1A00E4FF6E /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "universal-build";
+			productName = "universal-build";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		BF0A56FE19D5527A00E4FF6E /* BLECentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0A56FD19D5527A00E4FF6E /* BLECentralManager.m */; };
+		BF0A570119D554DC00E4FF6E /* PeripheralDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0A570019D554DC00E4FF6E /* PeripheralDevice.m */; };
+		BF0A570519D5557500E4FF6E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0A570419D5557500E4FF6E /* CoreBluetooth.framework */; };
+		BF0A570719D5557B00E4FF6E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0A570619D5557B00E4FF6E /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF0A56E319D5521500E4FF6E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF0A56E519D5521500E4FF6E /* libbeaconservice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbeaconservice.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0A56FC19D5527A00E4FF6E /* BLECentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLECentralManager.h; sourceTree = "<group>"; };
+		BF0A56FD19D5527A00E4FF6E /* BLECentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLECentralManager.m; sourceTree = "<group>"; };
+		BF0A56FF19D554DC00E4FF6E /* PeripheralDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralDevice.h; sourceTree = "<group>"; };
+		BF0A570019D554DC00E4FF6E /* PeripheralDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralDevice.m; sourceTree = "<group>"; };
+		BF0A570419D5557500E4FF6E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		BF0A570619D5557B00E4FF6E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF0A56E219D5521500E4FF6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0A570719D5557B00E4FF6E /* CoreLocation.framework in Frameworks */,
+				BF0A570519D5557500E4FF6E /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF0A56DC19D5521500E4FF6E = {
+			isa = PBXGroup;
+			children = (
+				BF0A570619D5557B00E4FF6E /* CoreLocation.framework */,
+				BF0A570419D5557500E4FF6E /* CoreBluetooth.framework */,
+				BF0A56E719D5521500E4FF6E /* beaconservice */,
+				BF0A56E619D5521500E4FF6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF0A56E619D5521500E4FF6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF0A56E519D5521500E4FF6E /* libbeaconservice.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF0A56E719D5521500E4FF6E /* beaconservice */ = {
+			isa = PBXGroup;
+			children = (
+				BF0A56FC19D5527A00E4FF6E /* BLECentralManager.h */,
+				BF0A56FD19D5527A00E4FF6E /* BLECentralManager.m */,
+				BF0A56FF19D554DC00E4FF6E /* PeripheralDevice.h */,
+				BF0A570019D554DC00E4FF6E /* PeripheralDevice.m */,
+			);
+			path = beaconservice;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF0A56E419D5521500E4FF6E /* beaconservice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0A56F619D5521500E4FF6E /* Build configuration list for PBXNativeTarget "beaconservice" */;
+			buildPhases = (
+				BF0A56E119D5521500E4FF6E /* Sources */,
+				BF0A56E219D5521500E4FF6E /* Frameworks */,
+				BF0A56E319D5521500E4FF6E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = beaconservice;
+			productName = beaconservice;
+			productReference = BF0A56E519D5521500E4FF6E /* libbeaconservice.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF0A56DD19D5521500E4FF6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Sam Wang";
+				TargetAttributes = {
+					BF0A56E419D5521500E4FF6E = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					BF0A570E19D55A1000E4FF6E = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = BF0A56E019D5521500E4FF6E /* Build configuration list for PBXProject "beaconservice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BF0A56DC19D5521500E4FF6E;
+			productRefGroup = BF0A56E619D5521500E4FF6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF0A56E419D5521500E4FF6E /* beaconservice */,
+				BF0A570E19D55A1000E4FF6E /* universal-build */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF0A571219D55A1A00E4FF6E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nCURRENTPATH=`pwd`\n\nrm -rf \"${CURRENTPATH}/build-*\"\n\nmkdir -p \"${CURRENTPATH}/build-arm\"\nmkdir -p \"${CURRENTPATH}/build-arm64\"\nmkdir -p \"${CURRENTPATH}/build-i386\"\nmkdir -p \"${CURRENTPATH}/build-x86_64\"\nmkdir -p \"${CURRENTPATH}/build-universal\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -project 'beaconservice.xcodeproj' -configuration ${CONFIGURATION} -sdk iphoneos clean build ARCHS='armv7 armv7s' IPHONEOS_DEPLOYMENT_TARGET='5.0' TARGET_BUILD_DIR='./build-arm' BUILT_PRODUCTS_DIR='./build-arm'\nxcodebuild -project 'beaconservice.xcodeproj' -configuration ${CONFIGURATION} -sdk iphoneos clean build ARCHS='arm64' IPHONEOS_DEPLOYMENT_TARGET='7.0' TARGET_BUILD_DIR='./build-arm64' BUILT_PRODUCTS_DIR='./build-arm64'\nxcodebuild -project 'beaconservice.xcodeproj' -configuration ${CONFIGURATION} -sdk iphonesimulator clean build ARCHS='i386' IPHONEOS_DEPLOYMENT_TARGET='5.0' TARGET_BUILD_DIR='./build-i386' BUILT_PRODUCTS_DIR='./build-i386'\nxcodebuild -project 'beaconservice.xcodeproj' -configuration ${CONFIGURATION} -sdk iphonesimulator clean build ARCHS='x86_64' VALID_ARCHS='x86_64' IPHONEOS_DEPLOYMENT_TARGET='7.0' TARGET_BUILD_DIR='./build-x86_64' BUILT_PRODUCTS_DIR='./build-x86_64'\n\n# Step 2. Create universal binary file using lipo\nlipo -create './build-arm/libbeaconservice.a' './build-arm64/libbeaconservice.a' './build-i386/libbeaconservice.a' './build-x86_64/libbeaconservice.a' -output './build-universal/libbeaconservice.a'\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF0A56E119D5521500E4FF6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0A56FE19D5527A00E4FF6E /* BLECentralManager.m in Sources */,
+				BF0A570119D554DC00E4FF6E /* PeripheralDevice.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BF0A56F419D5521500E4FF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF0A56F519D5521500E4FF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF0A56F719D5521500E4FF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sam Wang (YU48FCX28Z)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FFBBBA3C-AC50-44A1-87C5-89FB2232BD38";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BF0A56F819D5521500E4FF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sam Wang (YU48FCX28Z)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FFBBBA3C-AC50-44A1-87C5-89FB2232BD38";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BF0A571019D55A1100E4FF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF0A571119D55A1100E4FF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF0A56E019D5521500E4FF6E /* Build configuration list for PBXProject "beaconservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0A56F419D5521500E4FF6E /* Debug */,
+				BF0A56F519D5521500E4FF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0A56F619D5521500E4FF6E /* Build configuration list for PBXNativeTarget "beaconservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0A56F719D5521500E4FF6E /* Debug */,
+				BF0A56F819D5521500E4FF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF0A570F19D55A1100E4FF6E /* Build configuration list for PBXAggregateTarget "universal-build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0A571019D55A1100E4FF6E /* Debug */,
+				BF0A571119D55A1100E4FF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF0A56DD19D5521500E4FF6E /* Project object */;
+}
